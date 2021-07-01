@@ -1,10 +1,10 @@
-# node-api
+# FULL STACK NODE APP
 
-A REST API built with Node.js
+A **Full Stack** app built with Node.js and React.js
 
 ### About
 
-Node js with endpoints that get's a list of available sim cards, list sim card orders,
+A Full Stack Web App that Connects tho node.js endpoints that get's a list of available sim cards, list sim card orders,
 place an order, and to take an order.
 
 ### posts
@@ -23,7 +23,6 @@ Running on `PORT :3200`
 ```
 cd sample-node-api
 npm install
-npm start
 ```
 
 2. ## Start
@@ -67,7 +66,7 @@ npm test
 
 * `http://127.0.0.1:3200/order/:simID/:customerID`
 
-- `http://127.0.0.1:3200/orders`
+- `http://127.0.0.1:3200/orders/:id/?page=1&limit=2`
 
 - `http://127.0.0.1:3200/createCustomer`
 
