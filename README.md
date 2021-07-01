@@ -18,14 +18,14 @@ Running on `PORT :3200`
 - The Javascript you know and love
 - Minimal abstractions
 
-1. ## Clone the repository, install node packages and verify routes locally
+## Clone the repository, install node packages and verify routes locally
 
 ```
 cd sample-node-api
 npm install
 ```
 
-2. ## Start
+## Start
 
 ```
 //on development
@@ -39,7 +39,7 @@ mpm start:prod
 
 The API runs on port `3200` by default.
 
-4. ## Set Up The data base
+## Set Up The data base
 
 send a `POST` request to **all** this endpoint to setUp the databse
 
@@ -48,7 +48,7 @@ send a `POST` request to **all** this endpoint to setUp the databse
 - `http://127.0.0.1:3200/createcustomerdbtable`
 - `http://127.0.0.1:3200/createdbtable`
 
-5. ## Testing
+## Testing
 
 The tests of the API can be found in /**tests** folder.SuperTest was used for API Testing.
 
@@ -58,7 +58,7 @@ To run the tests:
 npm test
 ```
 
-6. ## end points
+## end points
 
 - `http://127.0.0.1:3200/createsimcard`
 
@@ -72,7 +72,7 @@ npm test
 
 - `http://127.0.0.1:3200/orders/:id`
 
-7. ## Creating a Sim Card
+## Creating a Sim Card
 
 To create a new sim card send a `POST` request to `http://127.0.0.1:3200/createsimcard`.
 In the request body you need to provide a unique name of th e sim card.
@@ -86,7 +86,7 @@ Response:
 }
 ```
 
-8. Getting All Available Sim Cards
+Getting All Available Sim Cards
 
 To get all availabe sim card send a `GET` request to `http://127.0.0.1:3200/sim-cards`.
 
@@ -117,7 +117,7 @@ Resonpse:
     ]...
 ```
 
-9. ## Creatting a customer
+## Creatting a customer
 
 To create a customer send a `POST` request to `http://127.0.0.1:3200/createCustomer`.
 Provide a name in the Request Body
@@ -145,7 +145,7 @@ Response:
 }
 ```
 
-10. ## Creating a Order
+## Creating a Order
 
 To create a order send `POST` request to `http://127.0.0.1:3200/order/:simID/:customerID` with the sim id and customer id in the uri.
 
@@ -167,11 +167,11 @@ Respone:
 }
 ```
 
-11. ## Getting Ordes
+## Getting Orders
 
 To get all the orders send a `GET` request to `http://127.0.0.1:3200/orders`.
 
-12. ## Take Order
+## Take Order
 
 To take a order send a `PATCH` request to `http://127.0.0.1:3200/orders/:id`. Theis will return a order object with a status **Complete**.
 
@@ -194,6 +194,6 @@ Response:
 
 ## Author
 
-Rotonda
+Rotonda Mulelu
 
 link to postman https://www.getpostman.com/collections/84c21ae657836a337e93
